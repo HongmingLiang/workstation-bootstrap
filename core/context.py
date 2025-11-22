@@ -17,7 +17,3 @@ class EnvironmentContext:
     
     def print_info(self) -> None:
         print(f"[INFO] Environment Context: has_sudo={self.has_sudo}, home={self.home}, local_bin={self.local_bin}")
-    
-def command_exists(command: str) -> bool:
-    from shutil import which
-    return which(command) is not None
